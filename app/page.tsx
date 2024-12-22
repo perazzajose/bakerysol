@@ -5,44 +5,36 @@ import Link from "next/link"
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { ProductCarousel } from '@/components/ui/product-carousel'
 
-
 export default function Home() {
   const products = [
+    
     {
-      name: "no me gusta la leche",
-      description: "el chantilly es un asco",
-      price: "$15.000",
-      images: ["/images/algorosado.jpg", "/images/tortafrutilla.jpg"], // Multiple imágenes
+      name: "Personalizada #1",
+      description: "baby-torta decorada con crema, lazos rojos y corazones, ideal para celebrar momentos especiales con un toque personalizado",
+      images: ["/images/babycake.jpeg"], // Una sola imagen
     },
     {
-      name: "trota de futrilla",
-      description: "frutilla papi q mas",
-      price: "$18.000",
-      images: ["/images/tortafrutilla.jpg"], // Una sola imagen
+      name: "Budín de almendras",
+      description: "horneado a la perfección, con almendras crocantes que aportan textura y sabor, perfectos para acompañar una merienda o regalar.",
+      images: ["/images/budinalmendras.jpeg"], // Tres imágenes
     },
     {
-      name: "una torta roja pastion roja diabolicamente roja",
-      description: "todo muy rojo",
-      price: "$8.000",
-      images: ["/images/tortaroja.jpg"], // Tres imágenes
+      name: "Torta Durazno",
+      description: "Una exquisita tarta con base de masa suave y un relleno cremoso, coronada con duraznos frescos y jugosos, perfecta para endulzar cualquier ocasión.",
+      images: ["/images/amarillo.jpeg"],
     },
     {
-      name: "yo que se",
-      description: "quien vrga sera ramon navarro",
-      price: "$12.000",
-      images: ["/images/ramonnavarro.jpg"],
+      name: "Bizcochos artesanales",
+      description: "Con una textura crujiente por fuera y suave por dentro, evocan el sabor auténtico de la repostería artesanal.",
+      images: ["/images/bizcocho.jpg", 
+        "/images/bizcocho2.jpg",
+         "/images/bizcocho3.jpg"],
     },
     {
-      name: "yo que se",
-      description: "Clásico pie de limón con merengue italiano",
-      price: "$16.000",
-      images: ["/placeholder.svg?height=200&width=300"],
-    },
-    {
-      name: "Alfajores",
-      description: "Pack de 12 alfajores rellenos de manjar",
-      price: "$10.000",
-      images: ["/placeholder.svg?height=200&width=300"],
+      name: "Pan Dulce",
+      description: "Una irresistible versión con trozos de chocolate que hará que quieras repetir.",
+      images: ["/images/pan_dulce.jpg",
+         "/images/pan_dulce1.jpg"],
     },
   ]
 
@@ -58,7 +50,7 @@ export default function Home() {
               height={48}
               className="rounded-full"
             />
-            <span className="sr-only">Dulce Sol</span>
+            <span className="sr-only">Dulces Sol</span>
           </Link>
           <nav className="flex gap-4 sm:gap-6">
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#inicio">
@@ -74,45 +66,35 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1 w-full">
-        <section id="inicio" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100/50 ">
-        <div
-    style={{
-      backgroundImage: "url('/images/background.jpg')", // Asegúrate de que la ruta sea correcta
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      filter: 'blur(8px)', // Aplica desenfoque
-    }}
-    
-  ></div>
-
-           <div className="relative z-10 container mx-auto px-4 md:px-6">
-    <div className="flex flex-col items-center space-y-4 text-center">
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-          Dulces Sol
-        </h1>
-        <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-          Horneado con amor para endulzar tus momentos especiales. Postres artesanales hechos con los mejores
-          ingredientes.
-        </p>
-      </div>
-      <div className="space-x-4">
-        <Button className="bg-pink-600 hover:bg-pink-700" asChild>
-          <Link href="#productos">Ver Productos</Link>
-        </Button>
-        <Button variant="outline" className="border-pink-200 hover:bg-pink-100" asChild>
-          <Link href="#contacto">Contáctame</Link>
-        </Button>
-      </div>
-    </div>
-  </div>
-</section>
+        <section id="inicio" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100/50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                  Dulces Sol
+                </h1>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  Horneado con amor para endulzar tus momentos especiales. Postres artesanales hechos con los mejores
+                  ingredientes.
+                </p>
+              </div>
+              <div className="space-x-4">
+                <Button className="bg-pink-600 hover:bg-pink-700" asChild>
+                  <Link href="#productos">Ver Productos</Link>
+                </Button>
+                <Button variant="outline" className="border-pink-200 hover:bg-pink-100" asChild>
+                  <Link href="#contacto">Contáctanos</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="productos" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Nuestros Productos</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Productos</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
               {products.map((product) => (
-                <Card key={product.name} className="hover:shadow-lg transition-shadow duration-200 bg-white/70">
+                <Card key={product.name} className="hover:shadow-lg transition-shadow duration-200 bg-white/70 w-full max-w-sm mx-auto">
                   <CardContent className="p-4">
                     <ProductCarousel 
                       images={product.images} 
@@ -120,7 +102,7 @@ export default function Home() {
                     />
                     <h3 className="text-xl font-bold mt-4">{product.name}</h3>
                     <p className="text-muted-foreground">{product.description}</p>
-                    <p className="font-bold mt-2">{product.price}</p>
+                    
                   </CardContent>
                 </Card>
               ))}
@@ -133,20 +115,20 @@ export default function Home() {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter">Contáctanos</h2>
                 <p className="text-muted-foreground">
-                  ¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarme.
+                  ¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarnos.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    <p>Calle falsa 123, Ciudad falsa</p>
+                    <p>Av. Principal 123, Ciudad</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    <p>091 111 111</p>
+                    <p>+56 9 1234 5678</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    <p>contacto@dulcesol.com</p>
+                    <p>contacto@dulcesmomentos.cl</p>
                   </div>
                 </div>
               </div>
@@ -190,7 +172,7 @@ export default function Home() {
       </main>
       <footer className="w-full py-6 px-4 md:px-6 border-t bg-white/50 backdrop-blur-sm">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-xs text-muted-foreground">© 2024 Dulces Sol. Todos los derechos reservados.</p>
+          <p className="text-xs text-muted-foreground">© 2024 Dulces Momentos. Todos los derechos reservados.</p>
           <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
             <Link className="text-xs hover:underline underline-offset-4" href="#">
               Términos de Servicio

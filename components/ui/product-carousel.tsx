@@ -25,7 +25,7 @@ export function ProductCarousel({ images, alt }: ProductCarouselProps) {
 
   if (images.length === 1) {
     return (
-      <div className="relative w-full h-[200px]">
+      <div className="relative w-full h-[300px]">
         <Image
           src={images[0]}
           alt={alt}
@@ -38,7 +38,7 @@ export function ProductCarousel({ images, alt }: ProductCarouselProps) {
   }
 
   return (
-    <div className="relative w-full h-[200px] group">
+    <div className="relative w-full h-[300px] group">
       {images.map((image, index) => (
         <div
           key={image}
@@ -52,7 +52,7 @@ export function ProductCarousel({ images, alt }: ProductCarouselProps) {
             alt={`${alt} ${index + 1}`}
             width={400}
             height={300}
-            className="rounded-lg object-cover w-full h-full"
+            className="rounded-lg object-cover w-full h-[300px]"
           />
         </div>
       ))}
