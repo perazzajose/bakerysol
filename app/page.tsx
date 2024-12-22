@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Instagram, MapPin, Phone } from 'lucide-react'
 import { ProductCarousel } from '@/components/ui/product-carousel'
 
 export default function Home() {
@@ -115,20 +115,20 @@ export default function Home() {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter">Contáctanos</h2>
                 <p className="text-muted-foreground">
-                  ¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarnos.
+                  ¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarme.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    <p>Av. Principal 123, Ciudad</p>
+                    <p>Mtvdeo</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    <p>+56 9 1234 5678</p>
+                    <p> <a href="https://api.whatsapp.com/send/?phone=%2B59892341842&text&type=phone_number&app_absent=0">092 341 842</a></p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mail className="h-5 w-5" />
-                    <p>contacto@dulcesmomentos.cl</p>
+                    <Instagram className="h-5 w-5" />
+                    <p><a href="https://www.instagram.com/dulcesolcito21/?hl=gu">@dulcesolcito21</a></p>
                   </div>
                 </div>
               </div>
